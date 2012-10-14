@@ -1,0 +1,32 @@
+
+
+.formFields > dd.formField-withButton input[type=text],
+.formFields > dd.formField-withButton input[type=password],
+.formFields > dd.formField-withButton textarea
+{ width:60%; }
+
+.formFields > dd.formField-postcodeLookup select { width:auto; display:block; max-width:100%; }
+.formFields > dd.formField-postcodeLookup input[type=text] { width:100px; }
+
+.formFields > dd.formField-date input[type=text],
+.formFields > dd.formField-date input[type=password],
+.formFields > dd.formField-date select
+ { width:65px; }
+
+.formFields > dd.formField-cv2 input[type=text] { width:50px; }
+
+
+
+
+.formIndicator-info {
+	color:#003977;
+	border-color:#003977;
+}
+.formIndicator-error {
+	color:#FF3838;
+	border-color:#FF3838;
+}
+.formIndicator-mandatory {
+	color:#FF3838;
+	border-color:#FF3838;
+}

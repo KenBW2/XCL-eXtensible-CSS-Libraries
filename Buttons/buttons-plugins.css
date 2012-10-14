@@ -1,0 +1,18 @@
+
+.button-main {background-color:#000000;}
+
+.button-disabled {opacity:0.3; cursor:default;}
+
+/*
+        HTML EXAMPLE
+           <button class="button button-addQty">
+               <input type="text" />
+               <span>Button</span>
+           </div>
+*/
+.button-addQty input[type=text] { display:inline-block; width:100px; background:#FFFFFF; border:none; color:#000000; text-align:left; }
+.button-addQty > span,
+.button-addQty > a,
+.button-addQty > button,
+.button-addQty > input[type=button]
+{ display:inline-block; }

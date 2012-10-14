@@ -1,0 +1,14 @@
+body {
+        background:#333333;
+        font-family:"Arial", sans-serif;
+}
+.container {
+        width:450px;
+        margin:0px auto;
+        background:#FFFFFF;
+        padding:20px;
+}
+
+.tile-fullWidth .button-main {
+	float:right;
+}

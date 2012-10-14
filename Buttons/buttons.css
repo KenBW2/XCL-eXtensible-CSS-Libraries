@@ -1,0 +1,61 @@
+/*
+    PREBUILT BUTTONS
+    An element-independent prebuilt CSS setup
+    
+    Instructions for use
+        1) Include the general .button styles
+        2) Choose a button type (optional)
+        
+        HTML EXAMPLE
+           <button class="button buttonMain">
+               <span>Button</span>
+           </div>
+*/
+
+button::-moz-focus-inner { 
+	border: 0;
+	padding: 0;
+	outline:none;
+}
+input::-moz-focus-inner { 
+	border: 0;
+	padding: 0;
+	outline:none;
+}
+
+.button {
+	display:inline-block;
+	padding:0px;
+	border:none;
+	background-position:top left;
+	line-height:25px;
+	
+	font-family:inherit;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	text-align:center;
+	
+	background:#666666;
+	color:#FFFFFF;
+	cursor:pointer;
+}
+.button > * {
+	display:block;
+	line-height:inherit;
+	background:inherit;
+	background-position:top right;
+	color:inherit;
+	font-weight:inherit;
+	margin-left:5px;
+	padding-right:5px;
+	font-size:inherit;
+	text-align:inherit;
+	vertical-align:middle;
+	text-decoration:inherit;
+}
+.button > * > img {
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:3px;
+}

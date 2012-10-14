@@ -1,0 +1,116 @@
+/*
+    FORM LAYOUTS
+    A CSS-based structure for laying out form elements
+    
+    Instructions for use
+        1) Include the general .formInput styles
+        2) Choose a formInput type (optional)
+        
+        HTML EXAMPLE
+           <dl class="formFields">
+               ...
+               <dt>
+                   <label>Payment Method</label>
+               </dt>
+               <dd>
+                   <input type="text" />
+               </dd>
+               ...
+           </dl>
+*/
+
+
+/*
+    1) Include the general .formInput styles
+*/
+
+.formFields {
+	overflow:auto;
+}
+
+.formFields > dt {
+	display:block;
+	width:120px;
+	padding-top:6px;
+	float:left;
+	clear:left;
+	margin:0px;
+}
+.formFields > dd {
+	padding-left:130px;
+	margin:0px;
+	display:block;
+}
+.formFields > dd:after {
+	content:' ';
+	clear:left;
+	display:block;
+}
+.formFields > dd > input[type=text],
+.formFields > dd > input[type=password],
+.formFields > dd > textarea,
+.formFields > dd > select
+{
+	width:150px;
+}
+.formFields > dd > select
+{
+	width:156px;
+}
+.formFields > dd > input[type=text],
+.formFields > dd > input[type=password],
+.formFields > dd > textarea,
+{
+	height:17px;
+}
+
+/*
+    FORM INDICATORS
+    Various icons useful in forms, such as for mandatory fields, help tooltips etc
+    
+    Instructions for use
+        1) Include the general .formIndicator styles
+        2) Choose a formInput type
+        
+        HTML EXAMPLE
+           <span class="formIndicator formIndicatorHelp">
+               ?
+               <span class="formInfoText">
+                   We will require validation of this address
+               </span>
+           </span>
+*/
+
+.formIndicator {
+	padding:0px 5px;
+	line-height:14px;
+	margin-right:3px;
+	cursor:help;
+	display:inline-block;
+}
+.formIndicator .formInfoText {
+	display:none;
+	margin:0px;
+	background:#FFFFFF;
+	border-width:1px;
+	border-style:solid;
+	position:absolute;
+}
+.formIndicator:hover .formInfoText {
+	display:block;
+}
+
+
+
+.formFieldsOptions {
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+.formFieldsOptions li input {
+	float:left;
+}
+.formFieldsOptions li {
+	line-height:20px;
+}
+

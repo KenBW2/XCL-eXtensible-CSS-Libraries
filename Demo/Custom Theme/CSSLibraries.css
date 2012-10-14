@@ -1,0 +1,85 @@
+/*
+    Import base libraries
+*/
+
+@import url("../../Tiles/tiles.css");
+@import url("../../Forms/formelements.css");
+@import url("../../Buttons/buttons.css");
+/*
+    Import extra plugins
+*/
+@import url("../../Forms/formelements-plugins.css");
+@import url("../../Buttons/buttons-plugins.css");
+
+
+
+/*======= BUTTON OVERRIDES */
+
+/*
+   Changing the style of the underlying button, and then button-main.
+   Note how text-transform is only required on .button because of inheritance
+*/
+.button { background-image:url(Button.png); background-color:#FFFFFF; text-transform:uppercase; }
+.button-main { background-image:url(ButtonMain.png); background-color:#FFFFFF;}
+
+
+
+/*======= FORM FIELD OVERRIDES */
+
+/*
+   Changing the width of the keys, and the padding-left of the values accordingly
+*/
+.formFields > dt { width:160px; }
+.formFields > dd { padding-left:170px; }
+
+/*
+   Backgrounds on rows: the background is only applied on the dd elements.
+   Padding is also applied for presentation
+*/
+.formFields { border:1px solid #666666; }
+.formFields > dt { padding-left:5px; }
+.formFields > dd { padding-top:5px; padding-bottom:5px; }
+.formFields > dd:nth-of-type(odd) { background:#CCCCCC; }
+.formFields > dd:nth-of-type(even) { background:#EFEFEF; }
+
+
+
+/*======= FORM INDICATOR OVERRIDES */
+
+/*
+  The first thing to do here is to override the values for the base class...
+*/
+.formIndicator {
+	line-height:18px;
+	height:18px;
+	width:18px;
+	padding:0px;
+	font-weight:700;
+	text-align:center;
+}
+.formIndicator .formInfoText {
+	color:#FFFFFF;
+	font-weight:300;
+	padding:3px;
+	padding-top:9px;
+	border:none;
+}
+
+/*
+   ...then set any updates on a per-subclass basis
+*/
+.formIndicator-info {
+	background:url(indicator-info.png);
+	color:#FFFFFF;
+}
+.formIndicator-info .formInfoText {
+	background:url(indicator-info-text-background.png);
+}
+
+.formIndicator-error {
+	background:url(indicator-error.png);
+	color:transparent;
+}
+.formIndicator-error .formInfoText {
+	background:url(indicator-text-background.png);
+}

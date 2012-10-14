@@ -1,0 +1,122 @@
+
+/*
+  ================================ F o r m   E l e m e n t s
+*/
+.formInput
+{
+	display:block;
+	overflow:auto;
+	margin-bottom:5px;
+}
+.formInputLabel {
+	display:block;
+	width:150px;
+	text-align:right;
+	padding-top:6px;
+	float:left;
+}
+.formInputValues {
+	margin-left:160px;
+	display:block;
+	min-height:30px;
+}
+
+
+.formInputLabel label {
+}
+
+.formInputValues input[type=text],
+.formInputValues input[type=password],
+.formInputValues textarea,
+.formInputValues select
+{
+	width:200px;
+}
+
+.formAction {
+	height:30px;
+	overflow:auto;
+}
+.boxFooter .formAction {
+	margin:0px 5px;
+}
+
+.formInputWithButton .formInputValues input[type=text],
+.formInputWithButton .formInputValues input[type=password],
+.formInputWithButton .formInputValues textarea
+{ width:60%; }
+
+.formInputWithButton .formInputValues select { width:auto!important; }
+.formInputPostcodeLookup .formInputValues input[type=text] { width:100px; }
+.formInputDate .formInputValues input[type=text],
+.formInputDate .formInputValues input[type=password],
+.formInputDate .formInputValues select
+ { width:65px; }
+
+
+
+.formHelpText {
+        display:block;
+        background:#D7EAFF;
+        border:1px solid #003977;
+        padding:2px;
+        color:#003977;
+        margin:3px 0px;
+}
+
+
+.formInputIndicator {
+        background:#FFB9B9;
+        border:1px solid #FF3838;
+        color:#FF3838;
+        padding:0px 5px;
+        line-height:14px;
+        margin-right:3px;
+}
+.formInputIndicator .formInputIndicatorText {
+        position:absolute;
+        display:none;
+        margin:0px;
+        border:inherit;
+        background:inherit;
+        color:inherit;
+}
+.formInputIndicator:hover .formInputIndicatorText {
+        display:block;
+}
+
+
+.formInputIndicatorHelp {
+        background:#D7EAFF;
+        border:1px solid #003977;
+        color:#003977;
+        padding:0px 5px;
+        line-height:14px;
+}
+
+.formValidationError {
+        background:#FFB9B9;
+        border:1px solid #FF3838;
+        color:#FF3838;
+        padding:0px 5px;
+        line-height:14px;
+}
+.formValidationError .formHelpText {
+        position:absolute;
+        margin:0px;
+        display:none;
+}
+.formValidationError:hover .formHelpText {
+        display:block;
+}
+
+
+.formInputRequired .formInputValues:after {
+	content:'*';
+        background:#FFB9B9;
+        border:1px solid #FF3838;
+        color:#FF3838;
+        padding:0px 5px;
+        line-height:14px;
+}
+

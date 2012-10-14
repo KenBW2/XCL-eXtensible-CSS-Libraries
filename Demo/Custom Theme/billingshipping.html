@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title></title>
+  <style type="text/css">
+body {
+	font-family:sans-serif;
+	font-size:12px;
+}
+  </style>
+  
+  <link href="CSSLibraries.css" rel="stylesheet" />
+  <link href="page.css" rel="stylesheet" />
+  
+  <script type="text/javascript">
+  function getid(id) {
+    return document.getElementById(id);
+  }
+  </script>
+ </head>
+ <body>
+
+<div class="container">
+
+<h2>Billing Details</h2>
+
+<dl class="formFields">
+    <dt>
+        <label>Email</label>
+        <span class="formIndicator formIndicator-mandatory">*
+        </span>
+        <span class="formIndicator formIndicator-info">i
+            <span class="formInfoText">We will require validation of this address</span>
+        </span>
+    </dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt>
+        <label>Choose a Password</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+	</dt>
+    <dd>
+        <input type="password" />
+    </dd>
+    
+    <dt>
+        <label>Payment Method</label>
+    </dt>
+    <dd>
+        <ul class="formFieldsOptions">
+            <li><input type="radio" id="output" name="Test" /><label>Pay by credit/debit card</label></li>
+            <li><input type="radio" id="output" name="Test" /><label>Pay by PayPal</label></li>
+        </ul>
+    </dd>
+    
+    <dt>
+        <label>Card number</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <input type="password" />
+    </dd>
+    
+    <dt>
+        <label>Card type</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <select>
+            <option>Visa</option>
+            <option>MasterCard</option>
+            <option>Maestro</option>
+            <option>VisaElectron</option>
+        </select>
+    </dd>
+    
+    <dt class="formField-date">
+        <label>Valid from</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd class="formField-date">
+        <select>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+        </select>
+        /
+        <select>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+        </select>
+    </dd>
+    
+    <dt class="formField-date">
+        <label>Valid until</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+        <span class="formIndicator formIndicator-error">!
+            <span class="formInfoText">The Valid To date must be in the future</span>
+        </span>
+    </dt>
+    <dd class="formField-date">
+        <select>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+        </select>
+        /
+        <select>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+        </select>
+    </dd>
+    
+    <dt class="formField-cv2">
+        <label>CV2</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+        <span class="formIndicator formIndicator-info">?
+            <span class="formInfoText">
+                The last three digits on the back of the card
+            </span>
+        </span>
+    </dt>
+    <dd class="formField-cv2">
+        <input type="text" />
+    </dd>
+    
+    <dt class="formField-cv2">
+        <label>Issue number</label>
+        <span class="formIndicator formIndicator-info">i
+            <span class="formInfoText">
+                Maestro/Solo only
+            </span>
+        </span>
+    </dt>
+    <dd class="formField-cv2">
+        <input type="text" />
+    </dd>
+    
+</dl>
+
+<h2>Billing Address</h2>
+
+<dl class="formFields">
+
+    <dt></dt>
+    <dd>
+        <ul class="formFieldsOptions">
+            <li><input type="checkbox" id="output" name="Test" /><label>Ship to billing address</label></li>
+        </ul>
+    </dd>
+    
+    <dt class="formField-postcodeLookup">
+        Lookup Address from postcode
+    </dt>
+    <dd class="formField-postcodeLookup">
+        <input type="text" />
+        <button class="button button"><span><img src="lookupIcon.png" />Look up</span></button>
+    </dd>
+    
+    <dt>
+        <label>Name</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt>
+        <label>Address Line 1</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt><label>Address Line 2</label></dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt>
+        <label>City</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt><label>County</label></dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt>
+        <label>Postcode</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt>
+        <label>Country</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <select>
+            <option>United Kingdom</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>Italy</option>
+            <option>Netherlands</option>
+        </select>
+    </dd>
+    
+    <dt><label>Telephone</label></dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+</dl>
+
+<a class="button"><span>Copy to Shipping Address</span></a>
+
+<h2>Shipping Address</h2>
+
+<dl class="formFields">
+
+    <dt></dt>
+    <dd>
+        <ul class="formFieldsOptions">
+            <li><input type="checkbox" id="output" name="Test" /><label>Ship to billing address</label></li>
+        </ul>
+    </dd>
+    
+    <dt class="formField-postcodeLookup">
+        <label>Lookup Address from postcode</label>
+        <span class="formIndicator formIndicator-info">i
+            <span class="formInfoText">We will require validation of this address</span>
+        </span>
+        <span class="formIndicator formIndicator-error">i
+            <span class="formInfoText">We are unable to ship to that location</span>
+        </span>
+    </dt>
+    <dd class="formField-postcodeLookup">
+        <input type="text" />
+        <button class="button button-disabled"><span><img src="lookupIcon.png" />Look up</span></button>
+        <select>
+            <option>1 Street Name, Town, City, AN7 8AB</option>
+        </select>
+    </dd>
+    
+    <dt>
+        <label>Name</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt>
+        <label>Address Line 1</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt><label>Address Line 2</label></dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt>
+        <label>City</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt><label>County</label></dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt>
+        <label>Postcode</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+    <dt>
+        <label>Country</label>
+        <span class="formIndicator formIndicator-mandatory">*</span>
+    </dt>
+    <dd>
+        <select>
+            <option>United Kingdom</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>Italy</option>
+            <option>Netherlands</option>
+        </select>
+    </dd>
+    
+    <dt><label>Telephone</label></dt>
+    <dd>
+        <input type="text" />
+    </dd>
+    
+</dl>
+
+
+
+<h2>Shipping Options</h2>
+
+<dl class="formFields">
+    <dt><label>Shipping method</label></dt>
+    <dd>
+        <ul class="formFieldsOptions">
+            <li><input type="radio" id="output" name="Test" /><label>Royal Mail First Class (&pound;2.99)</label></li>
+            <li><input type="radio" id="output" name="Test" /><label>UPS (&pound;5.00)</label></li>
+        </ul>
+    </dd>  
+    
+    <dt>
+        <label>Coupon codes</label>
+        <span class="formIndicator formIndicator-info">?
+            <span class="formInfoText">
+                If you have a coupon code, enter it on the box and click Add
+            </span>
+        </span>
+    </dt>
+    <dd>
+        <span class="button button-addQty"><input type="text" value="FREE-SHIPPING" /><a href="http://google.com">Add</a></span>
+    </dd>
+    
+    <dt><label>Applied coupons</label></dt>
+    <dd>
+        <ul class="formFieldsOptions">
+            <li><input type="checkbox" checked="checked" />10%OFF</li>
+            <li><input type="checkbox" checked="checked" />FIRSTVISIT</li>
+        </ul>
+    </dd>            
+</dl>
+
+<a class="button"><span>Continue shopping</span></a>
+<a class="button button-main"><span><img src="buttonArrow.png" />Proceed to next step</span></a>
+
+
+</div>
+ </body>
+</html>
