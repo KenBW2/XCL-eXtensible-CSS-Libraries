@@ -32,7 +32,6 @@ See Buttons/button-plugins.css for examples
 
 MORE INFORMATION & FEEDBACK
 =================
-Please visit this web page for more information on how to use the libraries.
 Feedback and code contributions are actively encouraged
 If you've created any extensions that you think would be helpful in the main library
 files please submit them for consideration
